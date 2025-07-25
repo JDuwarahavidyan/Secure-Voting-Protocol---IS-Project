@@ -50,8 +50,7 @@ The system is logically divided into two core phases: **Authentication** and **V
 
 1. **Vote Commitment**  
 - The voter selects a candidate  
-- Computes a **ballot** using:  
-  `h(vote)`  
+- Computes a **ballot** using: `h(vote)`  
   This commits to their choice *without revealing* the vote itself.
 
 2. **Payload Preparation**  
