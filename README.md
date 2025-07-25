@@ -15,9 +15,8 @@ The system is logically divided into two core phases: **Authentication** and **V
 
 1. **Voter Login with Nonce**  
    The voter initiates authentication by entering their username and generating a one-time random **nonce**.  
-   They compute a digest:  h(password || nonce)
-   
-and send it to the **Election Authority (EA)**. The EA verifies this using its securely stored password hashes.
+   They compute a digest:  `h(password || nonce)`  
+   and send it to the **Election Authority (EA)**. The EA verifies this using its securely stored password hashes.
 
 ✅ This mechanism prevents:
 - Password exposure in plaintext  
@@ -51,10 +50,8 @@ and send it to the **Election Authority (EA)**. The EA verifies this using its s
 
 1. **Vote Commitment**  
 - The voter selects a candidate  
-- Computes a **ballot** using:
-  ```
-  h(vote)
-  ```
+- Computes a **ballot** using:  
+  `h(vote)`  
   This commits to their choice *without revealing* the vote itself.
 
 2. **Payload Preparation**  
@@ -78,9 +75,7 @@ EA decrypts the payload and:
 
 5. **Vote Tallying**  
 - After voting ends, EA compares stored ballot hashes against known candidate name hashes:
-  ```
-  h("A. Alice"), h("B. Bob"), ...
-  ```
+  `h("A. Alice"), h("B. Bob"), ...`  
 - Votes are counted by matching these hashes
 
 🛡️ **Security Goals Achieved in this Phase**:
@@ -88,5 +83,13 @@ EA decrypts the payload and:
 - **Integrity**: Only valid signed tokens are accepted  
 - **Confidentiality**: Vote payload is encrypted  
 - **Freshness**: Timestamp must be within allowed time window
+
+---
+
+## 🧩 System Design Diagram
+
+The following diagram illustrates the flow of the Secure Voting Protocol across the Authentication and Voting phases:
+
+![Secure Voting Design Diagram](Design_Diagram.png)
 
 ---
