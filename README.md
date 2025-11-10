@@ -1,4 +1,33 @@
-# Secure Voting Protocol
+<!-- ---------------------------------------------------------------- -->
+<!-- 🔐 PROJECT HEADER -->
+<!-- ---------------------------------------------------------------- -->
+
+<h1 align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60" height="60" alt="Java Logo">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" width="60" height="60" alt="Eclipse IDE Logo">
+  <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" width="60" height="60" alt="Security Icon">
+  <br>
+  🔐 <span style="color:#4da6ff">Secure Voting Protocol for Class Elections</span> 🗳️  
+</h1>
+
+<h3 align="center">🛡️ A Cryptographically Secure, Anonymous, and Verifiable E-Voting System</h3>
+
+<p align="center">
+  <em>Developed as part of the Information Security module — Faculty of Engineering, University of Ruhuna</em>  
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17+-red?logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/Eclipse%20IDE-2023+-purple?logo=eclipseide&logoColor=white">
+  <img src="https://img.shields.io/badge/Cryptography-DH%20%7C%20RSA%20%7C%20SHA256-lightblue?logo=lock&logoColor=white">
+  <img src="https://img.shields.io/badge/Confidentiality-End%20to%20End-success">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey">
+</p>
+
+---
+
+
+
 
 This project implements a secure voting protocol designed to ensure **four fundamental security properties**:
 
