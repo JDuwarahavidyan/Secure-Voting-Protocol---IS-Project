@@ -151,7 +151,7 @@ EA decrypts the payload and:
 Below diagram illustrates the **flow of the Secure Voting Protocol** across the Authentication and Voting phases:
 
 <p align="center">
-  <img src="img/IS.gif" alt="Secure Voting System" width="750">
+  <img src="IS.gif" alt="Secure Voting System" width="750">
 </p>
 
 ---
